@@ -1,9 +1,9 @@
 # Project Information
-site_name: circRNA DAQ (Detection/Annotation/Quantification)
+site_name: circRNA ampliconSeq
 site_author: Vishal Koparde, Ph.D.
 # Repository
-repo_name: kopardev/circRNA
-repo_url: https://github.com/kopardev/circRNA
+repo_name: CCBR/CCBR_circRNA_AmpliconSeq
+repo_url: https://github.com/CCBR/CCBR_circRNA_AmpliconSeq
 
 # Copyright
 copyright: Copyright &copy; 2021 CCBR
