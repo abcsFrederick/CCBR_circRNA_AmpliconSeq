@@ -1,3 +1,5 @@
+BSJFA=rules.create_bsjfa.output.bsjfa
+
 rule salmon:
     input:
         bam=rules.align.output.bam,

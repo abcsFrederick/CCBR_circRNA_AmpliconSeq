@@ -52,9 +52,9 @@ except KeyError:
 
 # get scripts folder
 try:
-	SCRIPTS = config["scripts"]
+	SCRIPTSDIR = config["scriptsdir"]
 except KeyError:
-	SCRIPTS = join(WORKDIR,"scripts")
+	SCRIPTSDIR = join(WORKDIR,"scripts")
 
 ## Load tools from YAML file
 with open(config["tools"]) as f:
