@@ -15,7 +15,7 @@ SCRIPTNAME="$0"
 SCRIPTDIRNAME=$(readlink -f $(dirname $0))
 SCRIPTBASENAME=$(readlink -f $(basename $0))
 
-EXTRA_SINGULARITY_BINDS="-B /data/CCBR_Pipeliner/:/data/CCBR_Pipeliner/"
+EXTRA_SINGULARITY_BINDS="-B /data/CCBR_Pipeliner/:/data/CCBR_Pipeliner/ -B /data/Ziegelbauer_lab/resources/:/data/Ziegelbauer_lab/resources/"
 
 function get_git_commitid_tag() {
   cd $1
