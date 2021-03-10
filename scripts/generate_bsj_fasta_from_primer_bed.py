@@ -30,6 +30,7 @@ parser.add_argument('--flankmax', dest='flankmax', type=int, required=False, def
 args = parser.parse_args()
 # sequences = dict( (s.name, s) for s in HTSeq.FastaReader(args.reffa) )
 sequences = dict( (s[1], s[0]) for s in HTSeq.FastaReader(args.reffa, raw_iterator=True) )
+# sequences = dict( (s[1], s[0]) for s in HTSeq.FastaReader(args.reffa) )
 primers = read_bed_file(args.primerbed)
 # print(primers)
 # for primer in primers:
