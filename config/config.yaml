@@ -8,7 +8,11 @@ workdir: "WORKDIR"
 #
 samples: "WORKDIR/samples.tsv"
 #
+# BSJ fasta file
+bsjfa: "/data/Ziegelbauer_lab/Sarah/MiSeq_R2/bsjs_020921.fasta"
 #
+bowtie2_alignment_parameters: "--very-sensitive-local"
+salmon_parameters: "-l U --maxReadOcc 3 --minAssignedFrags 60"
 #
 #
 #
@@ -21,6 +25,7 @@ resourcesdir: "PIPELINE_HOME/resources"
 tools: "PIPELINE_HOME/config/tools.yaml"
 cluster: "PIPELINE_HOME/config/cluster.json"
 adapters: "PIPELINE_HOME/resources/TruSeq_and_nextera_adapters.consolidated.fa"
+bsjfadefault: "PIPELINE_HOME/resources/bsjs_020921.fasta.gz"
 #
 ## Resources
 #
