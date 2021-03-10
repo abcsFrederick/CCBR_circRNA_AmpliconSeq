@@ -51,7 +51,7 @@ else
     -x $bt2_index \
     -U {input.r1}
 fi \
-| awk '{{$6 ~ /60M/ || $1 ~ /^@/}}' \
+| awk -F"\t" '{{if ($6 ~ /60M/ || $1 ~ /^@/){{print}}}}' \
 | sambamba view --nthreads={threads} -S --format=bam -o=/dev/stdout /dev/stdin \
 | sambamba sort --memory-limit={params.mem}G --tmpdir=/dev/shm --nthreads={threads} --out={output.bam} /dev/stdin
 """
