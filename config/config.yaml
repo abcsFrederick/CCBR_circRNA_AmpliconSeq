@@ -10,6 +10,8 @@ samples: "WORKDIR/samples.tsv"
 #
 # BSJ fasta file
 bsjfa: "/data/Ziegelbauer_lab/Sarah/MiSeq_R2/bsjs_020921.fasta"
+# divergent primers bed file BED6 format required!
+primerbed: "PIPELINE_HOME/resources/primers.bed"
 #
 bowtie2_alignment_parameters: "--very-sensitive-local"
 salmon_parameters: "-l U --maxReadOcc 3 --minAssignedFrags 60"
