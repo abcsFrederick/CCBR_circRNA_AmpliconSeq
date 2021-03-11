@@ -16,7 +16,8 @@ rule all:
         #align
         expand(join(WORKDIR,"results","{sample}","bam","{sample}.bam"),sample=SAMPLES),
         #quant
-        mergedquant=join(WORKDIR,"results","mergedquant.tsv")
+        join(WORKDIR,"results","mergedquant.tsv"),
+        join(WORKDIR,"results","mergedquant.filtered.tsv")
         
 
 
