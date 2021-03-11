@@ -10,8 +10,8 @@ cutadapt:
 #  version: "multiqc/1.9"
 # picard:
 #  version: "picard/2.25.0"
-# python37:
-#  version: "python/3.7"
+python37:
+ version: "python/3.7"
 salmon:
  version: "salmon/1.4.0"
 sambamba:

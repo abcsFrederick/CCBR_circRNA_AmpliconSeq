@@ -15,9 +15,9 @@ rule create_primerbed:
         primerbed=join(WORKDIR,"bowtie_index","primers.bed")
     params:
         script=join(SCRIPTSDIR,"build_primer_bed.py")
-    envmodules: TOOLS["python"]["version"]
+    envmodules: TOOLS["python37"]["version"]
     shell:"""
-python {script} {input.primertsv} > {output.primerbed}
+python {params.script} {input.primertsv} > {output.primerbed}
 """
 
 rule create_bsjfa:
@@ -50,7 +50,7 @@ rule build_index:
 cd {params.outdir}
 bsjfa=$(basename {input.bsjfa})
 bowtie2-build $bsjfa bsj
-gzip -n {input.bsjfa}
+# gzip -n -f {input.bsjfa}
 """
 
 rule align:
@@ -84,7 +84,7 @@ else
     -x $bt2_index \
     -U {input.r1}
 fi \
-| awk -F"\t" '{{if ($6 ~ /60M/ || $1 ~ /^@/){{print}}}}' \
+| awk -F"\\t" '{{if ($6 ~ /60M/ || $1 ~ /^@/){{print}}}}' \
 | sambamba view --nthreads={threads} -S --format=bam -o=/dev/stdout /dev/stdin \
 | sambamba sort --memory-limit={params.mem}G --tmpdir=/dev/shm --nthreads={threads} --out={output.bam} /dev/stdin
 """
