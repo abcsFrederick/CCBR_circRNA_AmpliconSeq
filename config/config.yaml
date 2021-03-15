@@ -28,7 +28,7 @@ aggregate_quant_rowsum_filter: 50     # aggregate quant.sf across samples and fi
 #
 #
 ## you most probably dont need to change these
-scriptsdir: "PIPELINE_HOME/scripts"
+scriptsdir: "PIPELINE_HOME/workflow/scripts"
 resourcesdir: "PIPELINE_HOME/resources"
 tools: "PIPELINE_HOME/config/tools.yaml"
 cluster: "PIPELINE_HOME/config/cluster.json"

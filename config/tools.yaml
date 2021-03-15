@@ -16,6 +16,8 @@ salmon:
  version: "salmon/1.4.0"
 sambamba:
  version: "sambamba/0.8.0"
+R:
+ version: "R/4.0.3"
 # samtools:
 #  version: "samtools/1.11"
 # star:
