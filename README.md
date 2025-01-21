@@ -1,7 +1,11 @@
-![GitHub issues](https://img.shields.io/github/issues/CCBR/CCBR_circRNA_AmpliconSeq)![forks](https://img.shields.io/github/forks/CCBR/CCBR_circRNA_AmpliconSeq)![stars](https://img.shields.io/github/stars/CCBR/CCBR_circRNA_AmpliconSeq)![LICENSE](https://img.shields.io/github/license/CCBR/CCBR_circRNA_AmpliconSeq)
-
 # CCBR circRNA AmpliconSeq Snakemake Workflow
-This is a snakemake workflow to process circRNA AmpliconSeq datasets generated to study circRNAs in KSHV and human hosts using divergent primers. Some basic usage instructions are as follows:
+
+Process circRNA AmpliconSeq datasets generated to study circRNAs in KSHV and human hosts using divergent primers
+
+![GitHub issues](https://img.shields.io/github/issues/CCBR/CCBR_circRNA_AmpliconSeq)![forks](https://img.shields.io/github/forks/CCBR/CCBR_circRNA_AmpliconSeq)![stars](https://img.shields.io/github/stars/CCBR/CCBR_circRNA_AmpliconSeq)![LICENSE](https://img.shields.io/github/license/CCBR/CCBR_circRNA_AmpliconSeq)
+[![release](https://img.shields.io/github/v/release/CCBR/CCBR_circRNA_AmpliconSeq?color=blue&label=latest%20release)](https://github.com/CCBR/CCBR_circRNA_AmpliconSeq/releases/latest)
+
+## Usage
 
 ```
 USAGE:
